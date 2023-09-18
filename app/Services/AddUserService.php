@@ -15,7 +15,7 @@ class AddUserService
 
     public function create($data)
     {
-        $this->user->create($data);
+        return $this->user->create($data);
     }
 
 }

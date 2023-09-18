@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('users/store',[\App\Http\Controllers\UserController::class,'store'])->name('users.store')->middleware('auth');
