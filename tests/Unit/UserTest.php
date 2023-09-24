@@ -16,7 +16,7 @@ class UserTest extends TestCase
        $this->userService = $this->app->make('App\services\AddUserService');
        $this->data = [
            'name'=>'dasdasd',
-           'email'=>'zcddssadzc@ads.com',
+           'email'=>'zsfacdxcmwewejjdssadzc@ads.com',
            'password'=>'dadasdsad'
        ];
    }
@@ -25,8 +25,8 @@ class UserTest extends TestCase
     {
         $this->userService->create($this->data);
 
-        $this->assertDatabaseHas('users',[
+        $this->assertDatabaseHas('users',[]);
 
-        ]);
+
     }
 }
